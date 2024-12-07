@@ -1,0 +1,78 @@
+.checkoutProduct {
+    display: flex;
+  justify-content: space-between; /* Ensure even space distribution */
+  align-items: center; /* Vertically center items */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #f7f7f7; /* Light background to differentiate products */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+.checkoutProduct:hover {
+    transform: scale(1.02); /* Slight zoom effect on hover */
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.15);
+}
+   
+.checkoutProduct-left {
+    margin-right: 20px;  /* Space between image and info */
+}
+
+.checkoutProduct-image {
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;  /* Added slight rounding for the image */
+}
+
+.checkoutProduct-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;  /* Aligns content vertically */
+    justify-content: space-between;  /* Space between title, price, rating, and button */
+}
+
+.checkoutProduct-info {
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.checkoutProduct-title {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 10px;  /* Added space below the title */
+}
+
+.checkoutProduct-price {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.checkoutProduct-rating {
+    display: flex;
+    margin-bottom: 10px;  /* Spacing below rating */
+}
+
+.checkoutProduct-removeBtn {
+    background-color:#ff9900;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #9c7e31 #846a29;
+    color: #111;
+    cursor: pointer;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for button */
+}
+
+.checkoutProduct-removeBtn:hover {
+    background-color:#e68a00;  /* Button color change on hover */
+}
+
+.checkoutProduct-removeBtn:active {
+    transform: scale(0.95);  /* Button click effect */
+}
+
